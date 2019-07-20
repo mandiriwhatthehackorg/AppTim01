@@ -11,8 +11,21 @@ const markers = [
       latitude: -6.890842,
       longitude: 107.610391,
     },
-    title: "huyu",
-    description: "description"
+    title: "Possible 1",
+  },
+  {
+    latLng: {
+      latitude: -6.889842,
+      longitude: 107.608391,
+    },
+    title: "Possible 1",
+  },
+  {
+    latLng: {
+      latitude: -6.892842,
+      longitude: 107.611391,
+    },
+    title: "Possible 1",
   }
 ];
 
@@ -38,8 +51,8 @@ class MapScreen extends Component {
               }}
             >
               {markers.map(marker => {
-                <Marker
-                  coordinate={marker.latlng}
+                return <Marker
+                  coordinate={marker.latLng}
                   title={marker.title}
                   description={marker.description}
                 />;
