@@ -1,7 +1,7 @@
 import { observable } from 'mobx';
 
 class JWTStore {
-  @observable jwt = 'huyu';
+  @observable jwt = '';
 
   addJWT(jwt) {
     this.jwt = jwt;

@@ -89,7 +89,6 @@ const SignedInNavigator = createBottomTabNavigator(
       }
     }),
     tabBarOptions: {
-      initialRouteName: "Profile",
       activeTintColor: "#1C5DD9",
       inactiveTintColor: "gray"
     }
